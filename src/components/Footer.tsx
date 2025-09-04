@@ -87,7 +87,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border/30 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2025 TechnothirsT. All rights reserved. Made by V.Vimal Dharshan ❤️ K.S.Srinithi
+            © 2025 TechnothirsT. All rights reserved. Made by V.Vimal Dharshan ❤️
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-accent transition-smooth">
