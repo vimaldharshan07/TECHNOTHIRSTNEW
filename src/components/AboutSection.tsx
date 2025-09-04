@@ -30,7 +30,7 @@ export const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-glow">
             <span className="gradient-accent bg-clip-text text-transparent">
-              About TECHNOTHRIST
+              About TechnothirsT'25
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">

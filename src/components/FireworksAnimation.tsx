@@ -77,7 +77,7 @@ export const FireworksAnimation = ({ onComplete }: { onComplete: () => void }) =
               TECHNOTHRIST
             </h1>
             <div className="text-2xl md:text-4xl mt-6 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-              <span className="text-rainbow font-bold">🎆 Loading the Future... 🎆</span>
+              <span className="text-rainbow font-bold">🎆 Loading... 🎆</span>
             </div>
             <div className="mt-4 animate-fade-in-up" style={{ animationDelay: '1s' }}>
               <div className="flex justify-center space-x-2">

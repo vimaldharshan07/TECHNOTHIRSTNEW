@@ -39,10 +39,10 @@ export const Navbar = () => {
             onClick={() => scrollToSection('home')}
           >
             <span className="gradient-primary bg-clip-text text-transparent">
-              TECHNO
+              Techno
             </span>
             <span className="gradient-accent bg-clip-text text-transparent">
-              THRIST
+              thirsT
             </span>
           </div>
 

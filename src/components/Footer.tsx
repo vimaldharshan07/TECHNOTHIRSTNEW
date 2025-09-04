@@ -23,10 +23,10 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <h3 className="text-3xl font-bold mb-4">
               <span className="gradient-primary bg-clip-text text-transparent">
-                TECHNO
+                Techno
               </span>
               <span className="gradient-accent bg-clip-text text-transparent">
-                THRIST
+                thirsT
               </span>
             </h3>
             <p className="text-muted-foreground mb-6 max-w-md">
@@ -74,7 +74,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Phone className="w-5 h-5 text-accent" />
-                <span className="text-sm">+91 98765 43210</span>
+                <span className="text-sm">+91 8838020164</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Mail className="w-5 h-5 text-accent" />
@@ -87,7 +87,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border/30 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2024 TECHNOTHRIST. All rights reserved. Made with ❤️ by A.V.C College of Engineering
+            © 2025 TechnothirsT. All rights reserved. Made by V.Vimal Dharshan ❤️ K.S.Srinithi
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-accent transition-smooth">

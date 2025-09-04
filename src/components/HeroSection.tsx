@@ -28,10 +28,10 @@ export const HeroSection = () => {
       <div className={`relative z-10 text-center px-4 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
         <h1 className="text-6xl md:text-9xl font-bold mb-6 text-glow floating">
           <span className="gradient-rainbow bg-clip-text text-transparent gradient-shift">
-            TECHNO
+            Techno
           </span>
           <span className="gradient-golden bg-clip-text text-transparent gradient-shift">
-            THRIST
+            thirsT
           </span>
         </h1>
         
@@ -40,7 +40,7 @@ export const HeroSection = () => {
             🚀 Igniting Innovation, Inspiring Minds 🚀
           </p>
           <p className="text-lg md:text-xl gradient-secondary bg-clip-text text-transparent animate-fade-in-up floating" style={{ animationDelay: '2s' }}>
-            ✨ A.V.C College of Engineering Symposium 2024 ✨
+            ✨ A.V.C College of Engineering Symposium 2025 ✨
           </p>
         </div>
 
