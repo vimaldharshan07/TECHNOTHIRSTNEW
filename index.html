@@ -28,25 +28,40 @@
   </div>
 
   <!-- Header Section with Responsive Image -->
-  <header>
-    <div class="header-image-container">
-      <!-- Replace 'images/header-image.jpg' with the actual path to your provided image -->
-      <img src="/public/Broucherimg/Headerbanner.jpg" alt="Header Image" class="responsive-header-image">
-    </div>
-    <!-- Existing banner -->
-    <div class="banner">
-      <div class="banner-content">
-        <h1 class="dept-banner">TechnothirsT'25</h1>
-        <p>Unleashing Innovation, Igniting Minds</p>
+ <div class="header-image-container">
+  <img src="/public/Broucherimg/Headerbanner.jpg" alt="Header Image" class="responsive-header-image">
+</div>
+<div class="banner">
+  <div class="banner-content">
+    <h1 class="dept-banner">TechnothirsT'25</h1>
+    <p>Unleashing Innovation, Igniting Minds</p>
+    <div class="countdown-timer">
+      <div class="countdown-item">
+        <span id="days">00</span>
+        <p>Days</p>
+      </div>
+      <div class="countdown-item">
+        <span id="hours">00</span>
+        <p>Hours</p>
+      </div>
+      <div class="countdown-item">
+        <span id="minutes">00</span>
+        <p>Minutes</p>
+      </div>
+      <div class="countdown-item">
+        <span id="seconds">00</span>
+        <p>Seconds</p>
       </div>
     </div>
-  </header>
+  </div>
+</div>
 
   <main>
    <section class="departments">
   <h2>Departments</h2>
   <div class="department-grid">
-    <a href="departments/cse.html" class="department-card" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1)), url('IT banner.jpeg');">
+    
+    <a href="departments/cse.html" class="department-card" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1)), url('/public/Bannerimg/IT banner.jpeg');">
       <h3>CSE</h3>
       <p>Computer Science and Engineering</p>
     </a>
@@ -88,6 +103,29 @@
     </a>
   </div>
 </section>
+<section class="past-glimpses">
+  <h2>Past Glimpses ✨</h2>
+  <div class="image-carousel-container">
+    <div class="image-carousel">
+      <img src="/public/WhatsApp Image 2025-09-05 at 13.30.00_9e5182ef.jpg" alt="Past Glimpse 1" onclick="openModal('/public/WhatsApp Image 2025-09-05 at 13.30.00_9e5182ef.jpg')">
+      <img src="/public/Glimpseimg/glimpse2.jpeg" alt="Past Glimpse 2" onclick="openModal('/public/Glimpseimg/glimpse2.jpeg')">
+      <img src="/public/Glimpseimg/glimpse3.jpeg" alt="Past Glimpse 3" onclick="openModal('/public/Glimpseimg/glimpse3.jpeg')">
+      <img src="/public/Glimpseimg/glimpse4.jpeg" alt="Past Glimpse 4" onclick="openModal('/public/Glimpseimg/glimpse4.jpeg')">
+      <img src="/public/Glimpseimg/glimpse5.jpeg" alt="Past Glimpse 5" onclick="openModal('/public/Glimpseimg/glimpse5.jpeg')">
+      <img src="/public/Glimpseimg/glimpse6.jpeg" alt="Past Glimpse 6" onclick="openModal('/public/Glimpseimg/glimpse6.jpeg')">
+      <img src="/public/Glimpseimg/glimpse7.jpeg" alt="Past Glimpse 7" onclick="openModal('/public/Glimpseimg/glimpse7.jpeg')">
+      <img src="/public/Glimpseimg/glimpse8.jpeg" alt="Past Glimpse 8" onclick="openModal('/public/Glimpseimg/glimpse8.jpeg')">
+      <img src="/public/Glimpseimg/glimpse1.jpeg" alt="Past Glimpse 1" onclick="openModal('/public/Glimpseimg/glimpse1.jpeg')">
+      <img src="/public/Glimpseimg/glimpse2.jpeg" alt="Past Glimpse 2" onclick="openModal('/public/Glimpseimg/glimpse2.jpeg')">
+      <img src="/public/Glimpseimg/glimpse3.jpeg" alt="Past Glimpse 3" onclick="openModal('/public/Glimpseimg/glimpse3.jpeg')">
+      <img src="/public/Glimpseimg/glimpse4.jpeg" alt="Past Glimpse 4" onclick="openModal('/public/Glimpseimg/glimpse4.jpeg')">
+      <img src="/public/Glimpseimg/glimpse5.jpeg" alt="Past Glimpse 5" onclick="openModal('/public/Glimpseimg/glimpse5.jpeg')">
+      <img src="/public/Glimpseimg/glimpse6.jpeg" alt="Past Glimpse 6" onclick="openModal('/public/Glimpseimg/glimpse6.jpeg')">
+      <img src="/public/Glimpseimg/glimpse7.jpeg" alt="Past Glimpse 7" onclick="openModal('/public/Glimpseimg/glimpse7.jpeg')">
+      <img src="/public/Glimpseimg/glimpse8.jpeg" alt="Past Glimpse 8" onclick="openModal('/public/Glimpseimg/glimpse8.jpeg')">
+    </div>
+  </div>
+</section>
   </main>
 
   <footer>
@@ -116,4 +154,5 @@
  </footer>
   <script src="script.js"></script>
 </body>
+ <script src="script.js"></script>
 </html>

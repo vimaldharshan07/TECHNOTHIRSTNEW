@@ -597,3 +597,166 @@ footer {
   
 
 /* Styles for the new section */
+.past-glimpses {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--secondary-bg); /* Or any color that fits your theme */
+  position: relative;
+  overflow: hidden;
+}
+
+.past-glimpses h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  background: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.image-carousel-container {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+.image-carousel {
+  display: flex;
+  width: calc(250px * 16); /* Total width of all images (8 original + 8 duplicated) */
+  animation: scroll-images 40s linear infinite; /* Adjust duration for speed */
+}
+
+.image-carousel:hover {
+  animation-play-state: paused;
+}
+
+.image-carousel img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 10px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease;
+}
+
+.image-carousel img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll-images {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8)); /* Moves one set of images out of view */
+  }
+}
+
+/* Full-screen Modal Styles */
+.fullscreen-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* Sit on top of everything */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  backdrop-filter: blur(10px);
+  padding-top: 60px;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Animations */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+/* Countdown Timer Styles */
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.countdown-item {
+  text-align: center;
+  color: #fff;
+}
+
+.countdown-item span {
+  font-size: 3rem;
+  font-weight: bold;
+  background: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  font-variant-numeric: tabular-nums;
+}
+
+.countdown-item p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .countdown-timer {
+    gap: 10px;
+    padding: 0.8rem 1rem;
+  }
+  .countdown-item span {
+    font-size: 2rem;
+  }
+  .countdown-item p {
+    font-size: 0.8rem;
+  }
+}
