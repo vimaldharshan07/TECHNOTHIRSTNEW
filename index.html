@@ -1,29 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TECHNOTHRIST 2024 - A.V.C College of Engineering Symposium</title>
-    <meta name="description" content="TECHNOTHRIST - The flagship symposium of A.V.C College of Engineering. Igniting Innovation, Inspiring Minds. Join us for cutting-edge technology exhibitions, competitions, and breakthrough research presentations." />
-    <meta name="author" content="A.V.C College of Engineering" />
-    <meta name="keywords" content="TECHNOTHRIST, symposium, engineering, technology, innovation, A.V.C College, CSE, IT, AIDS, ECE, EEE, MECH, MBA, MCA, CIVIL, CHEMICAL, BIOTECH" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnothirsT - AVC College of Engineering</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- <div class="theme-switch-wrapper">
+    <label class="theme-switch">
+      <input type="checkbox" id="darkModeToggle">
+      <div class="slider round"></div>
+    </label>
+    <em>Dark Mode</em>
+  </div> -->
 
-    <meta property="og:title" content="TECHNOTHRIST 2024 - A.V.C College of Engineering Symposium" />
-    <meta property="og:description" content="Igniting Innovation, Inspiring Minds. Join the flagship symposium showcasing cutting-edge technology and breakthrough research." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h1 class="popup-title">TechnothirsT'2k25</h1>
+      <p class="popup-subtitle">Welcome to the Technical Symposium </p>
+      <div class="popup-animation"></div>
+      <button onclick="closePopup()" class="close-popup">Let's Begin!❤️‍🔥</button>
+    </div>
+    <div class="sparklers" id="sparklers"></div>
+  </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@avccoe" />
-    <meta name="twitter:title" content="TECHNOTHRIST 2024 - Innovation Symposium" />
-    <meta name="twitter:description" content="Join us for the most exciting technology symposium of the year!" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
-    <link rel="canonical" href="https://technothrist.lovable.app" />
-  </head>
+  <!-- Header Section with Responsive Image -->
+  <header>
+    <div class="header-image-container">
+      <!-- Replace 'images/header-image.jpg' with the actual path to your provided image -->
+      <img src="/public/Broucherimg/Headerbanner.jpg" alt="Header Image" class="responsive-header-image">
+    </div>
+    <!-- Existing banner -->
+    <div class="banner">
+      <div class="banner-content">
+        <h1 class="dept-banner">TechnothirsT'25</h1>
+        <p>Unleashing Innovation, Igniting Minds</p>
+      </div>
+    </div>
+  </header>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <main>
+    <section class="departments">
+      <h2>Departments</h2>
+      <div class="department-grid">
+        <a href="departments/cse.html" class="department-card ">
+          <h3>CSE</h3>
+          <p>Computer Science and Engineering</p>
+        </a>
+        <a href="departments/it.html" class="department-card">
+          <h3>IT</h3>
+          <p>Information Technology</p>
+        </a>
+        <a href="departments/ece.html" class="department-card">
+          <h3>ECE</h3>
+          <p>Electronics and Communication</p>
+        </a>
+        <a href="departments/eee.html" class="department-card">
+          <h3>EEE</h3>
+          <p>Electrical and Electronics</p>
+        </a>
+        <a href="departments/ice.html" class="department-card">
+          <h3>ICE</h3>
+          <p>Instrumentation and Control Engineering</p>
+        </a>
+        <a href="departments/mech.html" class="department-card">
+          <h3>MECH</h3>
+          <p>Mechanical Engineering</p>
+        </a>
+        <a href="departments/civil.html" class="department-card">
+          <h3>CIVIL</h3>
+          <p>Civil Engineering</p>
+        </a>
+        <a href="departments/mba.html" class="department-card">
+          <h3>MBA</h3>
+          <p>Master of Business Administration</p>
+        </a>
+        <a href="departments/mca.html" class="department-card">
+          <h3>MCA</h3>
+          <p>Master of Computer Applications</p>
+        </a>
+        <a href="/departments/S&h.html" class="department-card">
+          <h3>S&H</h3>
+          <p>Science and Humanities</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+          <a href="https://www.facebook.com" target="_blank" style="color: white; text-decoration: none; font-size: 24px; margin-right: 10px;">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" style="color: white; text-decoration: none; font-size: 24px;">
+              <i class="fab fa-twitter"></i>
+          </a>
+          
+      </div>
+      <div class="footer-center">
+          <p><p>
+              <a href="https://www.avccollege.net/" style="color: white; text-decoration: none;">A.V.C. College (AUTONOMOUS)</a> | 
+              <a href="" style="color: white; text-decoration: none;">A.V.C. POLYTECHNIC COLLEGE</a> | 
+              <a href="" style="color: white; text-decoration: none;">A.V. Charities</a>
+          </p>
+           </p>
+      </div>
+      <div class="footer-right">
+          <p>Design & Hosted by - <a href="departments/developers.html">Web team</a>, Department of Computer Science and Engineering</p>
+      </div>
+  </div>
+ </footer>
+  <script src="script.js"></script>
+</body>
 </html>

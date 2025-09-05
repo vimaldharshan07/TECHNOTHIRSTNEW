@@ -1,0 +1,355 @@
+.dept-banner {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.dept-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shine 3s infinite;
+}
+
+.dept-banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+.dept-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+    letter-spacing: 2px;
+}
+
+.symposium-banner {
+   
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.banner-placeholder {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.banner-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shine 3s infinite;
+}
+
+.banner-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the entire image fits inside the container */
+    display: block; /* Removes any inline spacing issues */
+}
+
+
+.banner-content {
+    text-align: center;
+    z-index: 1;
+}
+
+.banner-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s ease-in-out infinite;
+}
+
+.event-date {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.event-rules {
+    padding: 3rem 2rem;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
+}
+
+.event-rules h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rule-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.rule-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.rule-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.rule-card ul {
+    list-style: none;
+}
+
+.rule-card li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.rule-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+    .dept-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-placeholder {
+        height: 300px;
+    }
+
+    .banner-content h3 {
+        font-size: 2rem;
+    }
+
+    .rules-container {
+        grid-template-columns: 1fr;
+    }
+}
+.download-rules {
+    text-align: center;
+    padding: 2rem;
+    background:  rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.download-rules h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.download-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-button {
+    padding: 1rem 2rem;
+    background:rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.download-button:hover {
+    
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.08);
+
+}
+
+@media (max-width: 768px) {
+    .download-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+    50% { text-shadow: 0 0 40px rgba(255, 255, 255, 0.8); }
+}
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Make sure it’s on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black with opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    /* For responsiveness, let it scale */
+}
+
+/* Caption text (if needed) */
+#modalCaption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* Close button */
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+.home-button-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Register Button Styles */
+.register-button {
+    background: rgba(53, 230, 9, 0.669);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Hover Effect */
+.register-button:hover {
+    background: rgba(46, 212, 13, 0.566);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animated Hand Icon */
+.hand-icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+    animation: handWave 1s infinite alternate;
+}
+
+/* Keyframes for the hand wave animation */
+@keyframes handWave {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+
+.home-button {
+    background: #1a2a6c;  /* A vibrant color; change as needed */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+    background: #14285a;
+    transform: scale(1.05);
+    
+}
+
