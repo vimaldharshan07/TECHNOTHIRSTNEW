@@ -420,7 +420,7 @@ input:checked + .slider:before {
 }
 
 /* Apply Background Images for Each Department */
-.department-card[href*="cse.html"] {
+/* .department-card[href*="cse.html"] {
     background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1));
 }
 .department-card[href*="it.html"] {
@@ -449,7 +449,7 @@ input:checked + .slider:before {
 }
 .department-card[href*="S&h.html"] {
     background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1));
-}
+} */
 
 /* Footer Styles */
 footer {
