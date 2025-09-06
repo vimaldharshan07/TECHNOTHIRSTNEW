@@ -1,6 +1,6 @@
 
 function initializeCountdown() {
-  const countdownDate = new Date("October 9, 2025 09:00:00").getTime();
+  const countdownDate = new Date("October 8, 2025 09:00:00").getTime();
 
   const x = setInterval(function() {
     const now = new Date().getTime();
