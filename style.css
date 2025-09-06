@@ -382,7 +382,63 @@ input:checked + .slider:before {
     position: relative;
     overflow: hidden;
 }
+/* --- General Card Styling --- */
+.department-card {
+  /* Add any other card styles here (e.g., width, height, margin) */
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Needed for the gradient overlay */
+  z-index: 1;
+}
 
+/* --- Gradient Overlay --- */
+.department-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1));
+  border-radius: 8px;
+  z-index: -1;
+}
+
+/* --- Individual Department Background Images --- */
+.cse {
+  background-image: url('../public/Bannerimg/IT banner.jpeg');
+}
+.it {
+  background-image: url('../public/Bannerimg/cse banner.jpeg');
+}
+.ece {
+  background-image: url('./EceBanner.jpeg'); /* This path might need fixing, see folder structure below */
+}
+.eee {
+  background-image: url('../public/Bannerimg/EEEBanner.jpeg');
+}
+.ice {
+  background-image: url('../public/Bannerimg/ICEBanner.jpeg');
+}
+.mech {
+  background-image: url('../public/Bannerimg/MechBanner.jpeg');
+}
+.civil {
+  background-image: url('../public/Bannerimg/CivilBanner.jpeg');
+}
+.mba {
+  background-image: url('../public/Bannerimg/MbaBanner.jpeg');
+}
+.mca {
+  background-image: url('../public/Bannerimg/McaBanner.jpeg');
+}
+.aids {
+  background-image: url('../public/Bannerimg/ScienceBanner.jpeg');
+}
 /* Gradient Overlay for a Stylish Effect */
 .department-card::before {
     content: "";
