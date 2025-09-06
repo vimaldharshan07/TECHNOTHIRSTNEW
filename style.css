@@ -409,9 +409,11 @@ input:checked + .slider:before {
 }
 
 /* --- Individual Department Background Images --- */
+
 .cse {
   background-image: url('../public/Bannerimg/IT banner.jpeg');
 }
+
 .it {
   background-image: url('../public/Bannerimg/cse banner.jpeg');
 }
